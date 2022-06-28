@@ -1,8 +1,10 @@
-body{
+body {
     font-family: 'Merriweather', serif;
+    background-color: whitesmoke;
 }
-*{
+
+* {
+
     padding: 0px;
     margin: 0px;
 }
-
