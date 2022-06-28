@@ -8,3 +8,100 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
+.header-background-color {
+    background-image: linear-gradient(to left, purple, yellow);
+}
+
+.header-font-color {
+    color: #d7d3d3;
+
+}
+
+.animation-icon {
+    color: aqua;
+}
+
+.nav-item .nav-link:hover {
+    transition: all;
+    color: black;
+    transform: scale(1.1);
+    transform: rotateY(360deg);
+    box-shadow: limegreen;
+    box-shadow: 5px 5px 5px 5px red;
+    margin-left: 25px;
+
+}
+
+.nav-link {
+    color: black;
+    display: flex;
+}
+
+.nav-gap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 16px;
+}
+
+.header-icons {
+    display: none;
+}
+
+.header-facebook-icon {
+    display: none;
+}
+.navbar-circle-icon {
+    color: darkcyan;
+}
+.header-call-number-btn{
+    color: aliceblue;
+}
+.header-titile-{
+    color: ghostwhite;
+}
+.header-number{
+    color: ghostwhite;
+    background: linear-gradient(150deg, darkgoldenrod, transparent);
+}
+.header-titile-:hover{
+    color: black;
+    
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (min-width:657px) and (max-width:2560px) {
+    .header-icons {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 26px;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 656px) {
+    .header-facebook-icon {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 19px;
+        background-color: thistle;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 500px) {
+    .navbar-circle-icon {
+        display: inline-grid;
+        color: red;
+        margin-left: 13px;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .navbar-circle-icon {
+        display: inline-grid;
+        color: darkcyan;
+        margin-left: 10px;
+    }
+
+}
