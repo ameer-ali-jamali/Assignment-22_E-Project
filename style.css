@@ -10,7 +10,7 @@ body {
 }
 
 .header-background-color {
-    background-image: linear-gradient(to left, purple, yellow);
+    background: linear-gradient(150deg, black, transparent);
 }
 
 .header-font-color {
@@ -23,14 +23,11 @@ body {
 }
 
 .nav-item .nav-link:hover {
-    transition: all;
     color: black;
     transform: scale(1.1);
     transform: rotateY(360deg);
-    box-shadow: limegreen;
-    box-shadow: 5px 5px 5px 5px red;
-    margin-left: 25px;
-
+    box-shadow: 1px 2px 6px 8px darkcyan;
+    margin-left: 10px;
 }
 
 .nav-link {
@@ -40,7 +37,6 @@ body {
 
 .nav-gap {
     display: flex;
-    justify-content: space-between;
     column-gap: 16px;
 }
 
@@ -51,26 +47,41 @@ body {
 .header-facebook-icon {
     display: none;
 }
+
 .navbar-circle-icon {
     color: darkcyan;
 }
-.header-call-number-btn{
+
+.header-call-number-btn {
     color: aliceblue;
 }
-.header-titile-{
+
+.header-titile- {
     color: ghostwhite;
 }
-.header-number{
+
+.header-number {
     color: ghostwhite;
     background: linear-gradient(150deg, darkgoldenrod, transparent);
 }
-.header-titile-:hover{
+
+.header-titile-:hover {
     color: black;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
 }
+
+.btn {
+    color: chocolate;
+}
+
+.dropdown {
+    display: none;
+}
+
 @media only screen and (min-width:657px) and (max-width:2560px) {
     .header-icons {
         display: flex;
@@ -104,4 +115,38 @@ a{
         margin-left: 10px;
     }
 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1275px) {
+    .dropdown {
+        display: grid;
+    }
+
+    .nav-items-hide {
+        display: none;
+    }
+
+    .dropdown-menu-background-color {
+
+        margin-left: -100px;
+        color: ghostwhite;
+        background: linear-gradient(150deg, darkgoldenrod, transparent);
+    }
+
+    .nav-gap {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 2px;
+    }
+
+    .contact-us-margin {
+        margin-right: 13px;
+    }
+
+    .dropdown .dropdown-item:hover {
+        color: black;
+        transform: rotateY(360deg);
+        box-shadow: 1px 2px 6px 8px darkcyan;
+        margin-left: 0px;
+    }
 }
