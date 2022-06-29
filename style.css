@@ -54,12 +54,6 @@ body {
     box-shadow: 0px 6px 7px 5px red;
 }
 
-.header-number {
-    /* color: ghostwhite;
-    background: linear-gradient(150deg, darkgoldenrod, transparent); */
-
-}
-
 .header-number:hover {
     box-shadow: 0px 6px 7px 5px red;
 }
