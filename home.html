@@ -33,14 +33,15 @@
 
   <header>
     <div class="top-header">
-      <div class="container-fluid d-flex justify-content-between align-items-center py-3 bg-light">
+      <div class="container-fluid d-flex justify-content-between header-container align-items-center py-3 bg-light">
         <span class="header-icons">
           <a href="#" class="header-icon-hide"><i class="fa fa-twitter fa-lg, icons header-icons-color"></i></a>
           <a href="#"><i class="fa fa-facebook fa-lg, icons header-icons-color"></i></a>
           <a href="#"><i class="fa fa-youtube-play fa-lg, icons header-icons-color"></i></a>
           <a href="#" class="header-icon-hide"><i class="fa fa-instagram fa-lg, icons header-icons-color"></i></a>
           <a href="#"><i class="fa fa-envelope fa-lg, icons header-icons-color"></i></a>
-          <a href="#" class="nav-icons-media icons header-icons-color"><i class="fas fa-spinner fa-pulse fa-lg"></i></a>
+          <a href="#" class="nav-icons-media icons header-icons-color navbar-circle-icon"><i
+              class="fas fa-spinner fa-pulse fa-lg"></i></a>
         </span>
         <span><a href="#" class="m-auto header-titile-">&nbsp; A-1 &nbsp; Uniforms For Order Over &nbsp;</a>
           <a href="#"><i class="fas fa-sync fa-spin fa-lg animation-icon m-2"></i></a>
@@ -56,7 +57,7 @@
     <div class="container-fluid fs-6" style="color:black;">
       <a class="navbar-brand" href="#"><span>&nbsp;&nbsp;</span> <span class="small-screen-header-icon"><i
             class="fa-duotone fa-globe fa-lg"></i></span>&nbsp;
-        <span class="navbar-hide-brand">A1-Uniforms</span></a>
+        <span class="navbar-hide-brand">A1-Uniforms &nbsp;&nbsp;</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="navbar-toggler-icon"></i>
@@ -74,23 +75,36 @@
             <a class="nav-link " href="#shirts">P.T. shorts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#shirts">P.T. track pants</a>
+            <a class="nav-link nav-items-hide" href="#shirts">P.T. track pants</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#shirts">Ties</a>
+            <a class="nav-link nav-items-hide" href="#shirts">Ties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#shirts">Belts</a>
+            <a class="nav-link nav-items-hide" href="#shirts">Belts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#shirts">Logos</a>
+            <a class="nav-link nav-items-hide" href="#shirts">Logos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#shirts">Socks</a>
+            <a class="nav-link nav-items-hide" href="#shirts">Socks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link contact-us-margin" href="#">Contact Us</a>
           </li>
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span href="#"><i class="fa fa-bars fa-lg"></i></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-background-color" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">P.T. track pants</a></li>
+              <li><a class="dropdown-item" href="#">Ties</a></li>
+              <li><a class="dropdown-item" href="#">Belts</a></li>
+              <li><a class="dropdown-item" href="#">Logos</a></li>
+              <li><a class="dropdown-item" href="#">Socks</a></li>
+            </ul>
+          </div>
         </ul>
       </div>
     </div>
@@ -146,8 +160,24 @@
     </div>
   </div>
 
+  <!-- cards -->
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+    </div>
+  </div>
 
-
+  <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
 
 
   <!-- Jquery -->

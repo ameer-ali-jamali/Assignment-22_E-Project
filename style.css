@@ -46,10 +46,6 @@ body {
     color: blue;
 }
 
-.navbar-circle-icon {
-    color: darkcyan;
-}
-
 .header-titile-:hover {
     box-shadow: 0px 6px 7px 5px red;
 }
@@ -83,6 +79,10 @@ a {
     background-color: blanchedalmond;
 }
 
+.dropdown {
+    display: none;
+}
+
 @media (max-width:262px) {
     .header-icons- {
         display: none;
@@ -112,6 +112,28 @@ a {
 @media (max-width:679px) {
     .header-icons {
         display: none;
+    }
+}
+
+@media (max-width: 705px) {
+    .header-icon-hide {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .navbar-toggler:hover {
+        color: black;
+        transform: rotateY(360deg);
+        box-shadow: 1px 2px 6px 8px red;
+        margin-left: 0px;
+
+    }
+}
+
+@media only screen and (min-width:100px) and (max-width:800px) {
+    .header-container {
+        height: 55px;
     }
 }
 
@@ -151,7 +173,7 @@ a {
 
 }
 
-@media only screen and (min-width: 100px) and (max-width: 272px) {
+@media only screen and (min-width: 100px) and (max-width: 279px) {
     .top-header {
         height: 44px;
         font-size: 8px;
@@ -163,9 +185,8 @@ a {
 
     .navbar-toggler {
         font-size: 12px;
-        background-color: currentcolor;
-    }
 
+    }
 }
 
 @media only screen and (min-width: 263px) and (max-width: 315px) {
@@ -176,8 +197,20 @@ a {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1275px) {
-    .dropdown-menu-background-color {
+    .nav-items-hide {
+        display: none;
+    }
 
+    .nav-items-gap {
+        display: flex;
+        gap: 0px;
+    }
+
+    .dropdown {
+        display: grid;
+    }
+
+    .dropdown-menu-background-color {
         margin-left: -100px;
         color: ghostwhite;
         background: linear-gradient(150deg, darkgoldenrod, transparent);
@@ -193,17 +226,24 @@ a {
         box-shadow: 1px 2px 6px 8px red;
         margin-left: 0px;
     }
+
+    .dropdown-toggle:hover {
+        color: black;
+        transform: rotateY(360deg);
+        box-shadow: 1px 2px 6px 8px red;
+        margin-left: 0px;
+    }
+
+
 }
 
-@media only screen and (min-width: 656px) and (max-width: 719px) {
+@media only screen and (min-width: 656px) and (max-width: 725px) {
     .header-icon-hide {
         display: none;
     }
 
-}
-
-@media (max-width: 705px) {
-    .header-icon-hide {
+    .navbar-circle-icon {
         display: none;
     }
+
 }
