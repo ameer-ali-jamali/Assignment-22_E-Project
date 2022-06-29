@@ -15,21 +15,16 @@
   <!-- Jquery -->
   <link rel="stylesheet" href="">
   <!-- Font Awosome -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Own Css -->
   <link rel="stylesheet" href="/style.css">
-  <!-- Fontawosome -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+  <!-- Google Fonts-->
+
   <!-- Fontawosome css -->
-  <!-- <link rel="stylesheet" href="./font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
-
-
-
 </head>
 
 <body>
@@ -37,20 +32,20 @@
   <!-- header design -->
 
   <header>
-    <div class="top-header header-background-color header-font-color">
-      <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+    <div class="top-header">
+      <div class="container-fluid d-flex justify-content-between align-items-center py-3 bg-light">
         <span class="header-icons">
-          <a href="#"><i class="fa fa-twitter fa-lg, icons"></i></a>
-          <a href="#"><i class="fa fa-facebook fa-lg, icons"></i></a>
-          <a href="#"><i class="fa fa-youtube-play fa-lg, icons"></i></a>
-          <a href="#"><i class="fa fa-instagram fa-lg, icons"></i></a>
-          <a href="#"><i class="fa fa-envelope fa-lg, icons"></i></a>
+          <a href="#" class="header-icon-hide"><i class="fa fa-twitter fa-lg, icons header-icons-color"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-lg, icons header-icons-color"></i></a>
+          <a href="#"><i class="fa fa-youtube-play fa-lg, icons header-icons-color"></i></a>
+          <a href="#" class="header-icon-hide"><i class="fa fa-instagram fa-lg, icons header-icons-color"></i></a>
+          <a href="#"><i class="fa fa-envelope fa-lg, icons header-icons-color"></i></a>
+          <a href="#" class="nav-icons-media icons header-icons-color"><i class="fas fa-spinner fa-pulse fa-lg"></i></a>
         </span>
-        <span><a href="#" class="m-auto header-titile-"> A-1 &nbsp; Uniforms For Order Over &nbsp; </a><i
-            class="fas fa-sync fa-spin fa-lg animation-icon"></i>
+        <span><a href="#" class="m-auto header-titile-">&nbsp; A-1 &nbsp; Uniforms For Order Over &nbsp;</a>
+          <a href="#"><i class="fas fa-sync fa-spin fa-lg animation-icon m-2"></i></a>
         </span>
-        <span><a href="#" class="text-decoration-none header-call-number-btn"> Call: <span>&nbsp;</span><span
-              class="header-number">800-6688-999</span></a></span>
+        <span><a href="#" class="text-decoration-none header-number"> Call :-&nbsp; 800-6688-999</a></span>
       </div>
     </div>
   </header>
@@ -59,26 +54,17 @@
 
   <nav class="navbar navbar-expand-lg nav nav-tabs">
     <div class="container-fluid fs-6" style="color:black;">
-      <a class="navbar-brand" href="#"><span class="nav-brand-margin"><i class="fa-duotone fa-globe"></i> &nbsp;
-          A1-Uniforms</span>&nbsp;&nbsp;<i class="fas fa-spinner fa-pulse navbar-circle-icon"></i></a>
-      <span class="header-facebook-icon">
-        <a href="#"><i class="fa fa-twitter fa-lg, icons"></i></a>
-        <a href="#"><i class="fa fa-facebook fa-lg, icons"></i></a>
-        <a href="#"><i class="fa fa-youtube-play fa-lg, icons"></i></a>
-        <a href="#"><i class="fa fa-instagram fa-lg, icons"></i></a>
-      </span>
+      <a class="navbar-brand" href="#"><span>&nbsp;&nbsp;</span> <span class="small-screen-header-icon"><i
+            class="fa-duotone fa-globe fa-lg"></i></span>&nbsp;
+        <span class="navbar-hide-brand">A1-Uniforms</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="navbar-toggler-icon"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-gap">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-items-gap">
           <li class="nav-item">
-            <a class="nav-link nav-gap" aria-current="page" href="#home"><i
-                class="fa-duotone fa-house-chimney-user fa-lg mt-2 "></i> &nbsp; Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="skirts.html" target="_blank">&nbsp;Skirts</a>
+            <a class="nav-link " href="#shirts">&nbsp;Skirts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link " href="#shirts">&nbsp;P.T. T-shirts</a>
@@ -88,36 +74,23 @@
             <a class="nav-link " href="#shirts">P.T. shorts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-items-hide" href="#shirts">P.T. track pants</a>
+            <a class="nav-link " href="#shirts">P.T. track pants</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-items-hide" href="#shirts">Ties</a>
+            <a class="nav-link " href="#shirts">Ties</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-items-hide" href="#shirts">Belts</a>
+            <a class="nav-link " href="#shirts">Belts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-items-hide" href="#shirts">Logos</a>
+            <a class="nav-link " href="#shirts">Logos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-items-hide" href="#shirts">Socks</a>
+            <a class="nav-link " href="#shirts">Socks</a>
           </li>
           <li class="nav-item">
             <a class="nav-link contact-us-margin" href="#">Contact Us</a>
           </li>
-          <div class="dropdown">
-            <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <span href="#"><i class="fa fa-bars fa-lg"></i></span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-background-color" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">P.T. track pants</a></li>
-              <li><a class="dropdown-item" href="#">Ties</a></li>
-              <li><a class="dropdown-item" href="#">Belts</a></li>
-              <li><a class="dropdown-item" href="#">Logos</a></li>
-              <li><a class="dropdown-item" href="#">Socks</a></li>
-            </ul>
-          </div>
         </ul>
       </div>
     </div>
@@ -172,6 +145,9 @@
       </button>
     </div>
   </div>
+
+
+
 
 
   <!-- Jquery -->
