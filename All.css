@@ -7,7 +7,8 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-.btn{
+
+.btn {
     position: relative;
 }
 
@@ -74,7 +75,7 @@ a {
 
 .nav-item .nav-link:hover {
     box-shadow: 0px 6px 7px 5px black;
-    margin-top: -7px;
+    margin-top: -4px;
     margin-right: 2px;
 }
 
@@ -167,7 +168,7 @@ Media Querys
         justify-content: space-evenly;
     }
 
-    
+
     .btn-info {
         font-size: 7px;
         --bs-btn-color: #000;
@@ -340,7 +341,7 @@ Media Querys
         row-gap: 17px;
     }
 
-    
+
     .btn-info {
         font-size: 7px;
         --bs-btn-color: #000;
