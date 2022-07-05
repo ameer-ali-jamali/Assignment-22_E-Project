@@ -428,10 +428,11 @@ Media Querys
     }
 }
 
-@media only screen and (min-width:992px) and (max-width:1024px) {
+@media only screen and (min-width:992px) and (max-width:1160px) {
     .navbar {
         font-family: 'Merriweather', serif;
-        font-size: 10px;
+        font-size: 12px !important;
+        font-weight: bold !important;
     }
 
 }
