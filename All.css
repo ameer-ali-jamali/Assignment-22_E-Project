@@ -103,6 +103,11 @@ a {
     font-size: 11px;
 }
 
+.bg-light {
+    background: linear-gradient(150deg, darkseagreen, beige, darkseagreen);
+}
+
+
 /* 
 .header-background-color {
     background: linear-gradient(150deg, black, transparent);
