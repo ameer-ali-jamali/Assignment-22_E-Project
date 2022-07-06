@@ -103,10 +103,12 @@ a {
     font-size: 11px;
 }
 
-.bg-light {
-    background: linear-gradient(150deg, darkseagreen, beige, darkseagreen);
+.header-width{
+    height: 34px;
 }
-
+.card-body{
+    display: inline-grid;
+}
 
 /* 
 .header-background-color {
