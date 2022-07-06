@@ -1,6 +1,8 @@
-body {
-    font-family: 'Merriweather', serif;
+body{
+    background: linear-gradient(150deg, darkslategrey,floralwhite);
 }
+
+
 
 * {
     margin: 0;
@@ -141,17 +143,7 @@ Media Querys
     .header-icons {
         gap: 10px;
     }
-
-    .h1-text-size {
-        font-size: 12px;
-        color: black;
-    }
-
-    .container-height {
-        height: 313px;
-
-    }
-
+    
     .header-text {
         font-size: 5px;
         color: #000000;
