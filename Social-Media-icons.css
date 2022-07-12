@@ -1,23 +1,16 @@
 /*----- Genral Classes start ------*/
 h1 {
-	text-align: center;
 	color: #999;
 	background: rgba(0, 0, 0, 0.36);
 	margin: 0;
 	padding: 5px;
 }
 h2 {
-	text-align: center;
 	color: #999; 
 	margin: 0;
 	padding: 5px;
 	margin-bottom: 30px;
-}
-a{
-	text-decoration: none;
-	color: black;
 } 
- 
 .wrapper,.copyright {
 	padding: 20px;
 	text-align: center;
