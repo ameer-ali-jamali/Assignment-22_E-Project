@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* 
+==============
+Media Queries
+==================
+*/
+@media (max-width:119px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+        margin-left: -3px;
+        margin-right: -6px;
+    }
+
+    .detail-btn {
+        font-size: 3px;
+    }
+
+    .add-cart-btn {
+        font-size: 3px;
+    }
+
+}
+
+@media only screen and (min-width:120px) and (max-width:189px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+    .detail-btn {
+        font-size: 6px;
+    }
+
+    .add-cart-btn {
+        font-size: 7px;
+    }
+
+}
+
+@media (min-width:190px) {
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+}
