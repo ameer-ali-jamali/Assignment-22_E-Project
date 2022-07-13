@@ -1,3 +1,39 @@
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 5px 0px red;
+    }
+
+    60% {
+        box-shadow: 0px 0px 5px 5px black;
+    }
+}
+
+.price-btn {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.navbar-brand {
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+}
+
+.display-btn-margin {
+    display: block !important;
+}
+
+.card-title {
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+
 
 /* 
 ======
@@ -47,6 +83,12 @@ Product Crads Css
         font-size: 7px;
     }
 
+    .display-btn-margin {
+        display: block !important;
+        margin-top: -64px;
+        text-align: center;
+    }
+
 }
 
 @media only screen and (min-width:190px) and (max-width:220px) {
@@ -56,6 +98,7 @@ Product Crads Css
         gap: 8px;
 
     }
+
     .detail-btn {
         font-size: 9px;
     }
@@ -64,118 +107,68 @@ Product Crads Css
         font-size: 9px;
     }
 
-}
-
-
-/* 
-===============
-Footer css
-=====================
- */
-
-a {
-    text-decoration: none !important;
-}
-
-.span-or {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: -2px;
-    margin-left: -25px;
-    background-color: #fff;
-    width: 50px;
-    text-align: center;
-}
-
-.hr-or {
-    background-color: #cdcdcd;
-    height: 1px;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-}
-
-footer.nb-footer {
-    background: #222;
-
-}
-
-footer.nb-footer .about {
-    margin: 0 auto;
-    margin-top: 40px;
-    max-width: 1170px;
-    text-align: center;
-}
-
-footer.nb-footer .about p {
-    font-size: 13px;
-    color: #999;
-    margin-top: 30px;
-}
-
-footer.nb-footer .about .social-media {
-    margin-top: 15px;
-}
-
-footer.nb-footer .about .social-media ul li a {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #b78c33;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-footer.nb-footer .about .social-media ul li a:hover {
-    background: #b78c33;
-    color: #fff;
-    border-color: #b78c33;
-}
-
-footer.nb-footer .footer-info-single {
-    margin-top: 30px;
-}
-
-footer.nb-footer .footer-info-single .title {
-    color: #aaa;
-    text-transform: uppercase;
-    font-size: 16px;
-    border-left: 4px solid #b78c33;
-    padding-left: 5px;
-}
-
-footer.nb-footer .footer-info-single ul li a {
-    display: block;
-    color: #aaa;
-    padding: 2px 0;
-}
-
-footer.nb-footer .footer-info-single ul li a:hover {
-    color: #b78c33;
-}
-
-footer.nb-footer .footer-info-single p {
-    font-size: 13px;
-    line-height: 20px;
-    color: #aaa;
-}
-
-footer.nb-footer .copyright {
-    margin-top: 15px;
-    background: #111;
-    padding: 7px 0;
-    color: #999;
-}
-
-footer.nb-footer .copyright p {
-    margin: 0;
-    padding: 0;
-}
-
-@media only screen and (min-width:130px) and (max-width:575px) {
-    .txt-align-sm {
+    .display-btn-margin {
+        display: block !important;
+        margin-top: -64px;
         text-align: center;
     }
+
+}
+
+@media (max-width:500px) {
+
+    .col-6 {
+        width: auto !important;
+        margin: auto !important;
+
+    }
+
+    .card-text {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .display-btn-margin {
+        position: relative;
+        display: block !important;
+        margin-top: -35px;
+        text-align: center;
+    }
+
+    .price-btn {
+        margin-top: -52px !important;
+        text-align: center;
+        display: flow-root;
+        margin-top: -52px;
+    }
+
+
+}
+
+@media only screen and (min-width:501px) and (max-width:768px) {
+
+    .display-btn-margin {
+        position: absolute;
+        display: block !important;
+        margin-top: -79px;
+        margin-left: -4px;
+    }
+
+    .price-btn {
+        position: absolute;
+        margin-top: -55px !important;
+    }
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1036px) {
+
+    .nav-font-size {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        color: black !important;
+    }
+
+
 }
