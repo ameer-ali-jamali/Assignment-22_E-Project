@@ -120,7 +120,7 @@ Media Queries
 
 
 
-@media only screen and (min-width:195px) and (max-width:300px) {
+@media only screen and (min-width:194px) and (max-width:300px) {
     .header-number {
         font-size: 9px;
         position: absolute;
@@ -130,7 +130,7 @@ Media Queries
     }
 
     .nav-brand-size {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .navbar-toggler {

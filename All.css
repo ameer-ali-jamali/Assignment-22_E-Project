@@ -1,14 +1,15 @@
-/*
-==============
-Products cards
-====================
+
+/* 
+======
+Product Crads Css
+=============== 
 */
 
+.card-footer-btn {
+    position: relative;
+    display: grid;
+    gap: 8px;
 
-img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
 }
 
 @media (max-width:119px) {
@@ -48,19 +49,22 @@ img {
 
 }
 
-@media (min-width:190px) {
+@media only screen and (min-width:190px) and (max-width:220px) {
     .card-footer-btn {
         position: relative;
         display: grid;
         gap: 8px;
 
     }
+    .detail-btn {
+        font-size: 9px;
+    }
+
+    .add-cart-btn {
+        font-size: 9px;
+    }
 
 }
-
-
-
-
 
 
 /* 
