@@ -142,7 +142,9 @@ Product Crads Css
         display: flow-root;
         margin-top: -52px;
     }
-
+    .w-75 {
+        width: 100%!important;
+    }
 
 }
 
