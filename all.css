@@ -49,73 +49,6 @@ Product Crads Css
 }
 
 @media (max-width:119px) {
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-        margin-left: -3px;
-        margin-right: -6px;
-    }
-
-    .detail-btn {
-        font-size: 3px;
-    }
-
-    .add-cart-btn {
-        font-size: 3px;
-    }
-
-}
-
-@media only screen and (min-width:120px) and (max-width:189px) {
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-
-    }
-
-    .detail-btn {
-        font-size: 6px;
-    }
-
-    .add-cart-btn {
-        font-size: 7px;
-    }
-
-    .display-btn-margin {
-        display: block !important;
-        margin-top: -64px;
-        text-align: center;
-    }
-
-}
-
-@media only screen and (min-width:190px) and (max-width:220px) {
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-
-    }
-
-    .detail-btn {
-        font-size: 9px;
-    }
-
-    .add-cart-btn {
-        font-size: 9px;
-    }
-
-    .display-btn-margin {
-        display: block !important;
-        margin-top: -64px;
-        text-align: center;
-    }
-
-}
-
-@media (max-width:500px) {
 
     .col-6 {
         width: auto !important;
@@ -146,6 +79,168 @@ Product Crads Css
     .w-75 {
         width: 100% !important;
     }
+
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+        margin-left: -3px;
+        margin-right: -6px;
+    }
+
+    .detail-btn {
+        font-size: 3px;
+    }
+
+    .add-cart-btn {
+        font-size: 3px;
+    }
+
+}
+
+@media only screen and (min-width:120px) and (max-width:189px) {
+
+    .col-6 {
+        width: auto !important;
+        margin: auto !important;
+
+    }
+
+    .card-text {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .display-btn-margin {
+        position: relative;
+        display: block !important;
+        margin-top: -35px;
+        text-align: center;
+    }
+
+    .price-btn {
+        margin-top: -52px !important;
+        text-align: center;
+        display: flow-root;
+        margin-top: -52px;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+    .detail-btn {
+        font-size: 6px;
+    }
+
+    .add-cart-btn {
+        font-size: 7px;
+    }
+
+    .display-btn-margin {
+        display: block !important;
+        margin-top: -64px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:190px) and (max-width:220px) {
+
+    .col-6 {
+        width: auto !important;
+        margin: auto !important;
+
+    }
+
+    .card-text {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .display-btn-margin {
+        position: relative;
+        display: block !important;
+        margin-top: -35px;
+        text-align: center;
+    }
+
+    .price-btn {
+        margin-top: -52px !important;
+        text-align: center;
+        display: flow-root;
+        margin-top: -52px;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+    .detail-btn {
+        font-size: 9px;
+    }
+
+    .add-cart-btn {
+        font-size: 9px;
+    }
+
+    .display-btn-margin {
+        display: block !important;
+        margin-top: -64px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:221px) and (max-width:500px) {
+
+
+    .col-6 {
+        width: auto !important;
+        margin: auto !important;
+
+    }
+
+    .card-text {
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .display-btn-margin {
+        position: relative;
+        display: block !important;
+        margin-top: -35px;
+        text-align: center;
+    }
+
+    .price-btn {
+        margin-top: -52px !important;
+        text-align: center;
+        display: flow-root;
+        margin-top: -52px;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+
 
 }
 
