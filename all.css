@@ -1,4 +1,4 @@
-@keyframes pulse {
+/* @keyframes pulse {
     0% {
         box-shadow: 0px 0px 5px 0px red;
     }
@@ -15,31 +15,44 @@
     -webkit-animation-iteration-count: infinite;
 }
 
-.navbar-brand {
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
 
-}
 
 .display-btn-margin {
     display: block !important;
+}
+
+.card {
+    width: 14rem;
+    height: 26rem;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+    transition: 0.3s transform cubic-bezier(0.075, 0.82, 0.165, 1),
+        3s -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+
 }
 
 .card-title {
     text-align: center;
     color: black;
     font-weight: 600;
+
+}
+
+.card:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgb(174, 178, 225), 0 4px 8px rgb(83, 76, 101);
 }
 
 
+.detail-btn {
+    color: black;
+}
 
-/* 
-======
-Product Crads Css
-=============== 
-*/
+.add-cart-btn {
+    color: white;
+}
+
 
 .card-footer-btn {
     position: relative;
@@ -47,6 +60,10 @@ Product Crads Css
     gap: 8px;
 
 }
+
+
+
+
 
 @media (max-width:119px) {
 
@@ -60,6 +77,22 @@ Product Crads Css
         position: relative;
         margin-top: 20px;
         text-align: center;
+    }
+
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+        margin-left: -3px;
+        margin-right: -6px;
+    }
+
+    .detail-btn {
+        font-size: 3px;
+    }
+
+    .add-cart-btn {
+        font-size: 3px;
     }
 
     .display-btn-margin {
@@ -80,21 +113,19 @@ Product Crads Css
         width: 100% !important;
     }
 
-    .card-footer-btn {
-        position: relative;
+    .nav-sm-display {
         display: grid;
-        gap: 8px;
-        margin-left: -3px;
-        margin-right: -6px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
     }
 
-    .detail-btn {
-        font-size: 3px;
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
     }
 
-    .add-cart-btn {
-        font-size: 3px;
-    }
 
 }
 
@@ -109,13 +140,6 @@ Product Crads Css
     .card-text {
         position: relative;
         margin-top: 20px;
-        text-align: center;
-    }
-
-    .display-btn-margin {
-        position: relative;
-        display: block !important;
-        margin-top: -35px;
         text-align: center;
     }
 
@@ -151,6 +175,19 @@ Product Crads Css
         text-align: center;
     }
 
+    .nav-sm-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
+    }
+
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
 }
 
 @media only screen and (min-width:190px) and (max-width:220px) {
@@ -164,13 +201,6 @@ Product Crads Css
     .card-text {
         position: relative;
         margin-top: 20px;
-        text-align: center;
-    }
-
-    .display-btn-margin {
-        position: relative;
-        display: block !important;
-        margin-top: -35px;
         text-align: center;
     }
 
@@ -206,16 +236,47 @@ Product Crads Css
         text-align: center;
     }
 
+    .nav-sm-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
+    }
+
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+
 }
 
 @media only screen and (min-width:221px) and (max-width:500px) {
-
 
     .col-6 {
         width: auto !important;
         margin: auto !important;
 
     }
+
+    .card-footer-btn {
+        position: relative;
+        display: grid;
+        gap: 8px;
+
+    }
+
+    .detail-btn {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .add-cart-btn {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
 
     .card-text {
         position: relative;
@@ -241,6 +302,19 @@ Product Crads Css
         width: 100% !important;
     }
 
+    .nav-sm-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
+    }
+
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
 
 }
 
@@ -258,15 +332,36 @@ Product Crads Css
         margin-top: -55px !important;
     }
 
-}
+    .nav-sm-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
+    }
 
-@media only screen and (min-width:992px) and (max-width:1036px) {
-
-    .nav-font-size {
-        font-size: 14px !important;
-        font-weight: 600 !important;
-        color: black !important;
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
     }
 
 
 }
+
+@media (max-width:991px) {
+
+    .nav-sm-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 32px;
+    }
+
+    .nav-drpdown-item {
+        object-fit: cover;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+
+} */

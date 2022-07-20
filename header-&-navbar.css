@@ -1,28 +1,62 @@
 /* 
 ===============
-This all  Css is only header ,Footer and Navbar.
+This all  Css is only header and Navbar.
 =====================
 */
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  width: 100%;
-  height: 100%;
-}
-
 @keyframes pulse {
   0% {
-    box-shadow: 0px 0px 5px 0px red;
+    background-color: #b78c33;
+  }
+
+  10% {
+    background-color: red;
+  }
+
+  20% {
+    background-color: blue;
+  }
+
+  30% {
+    background-color: darkcyan;
+  }
+
+  40% {
+    background-color: honeydew;
+  }
+
+  50% {
+    background-color: saddlebrown;
   }
 
   60% {
-    box-shadow: 0px 0px 5px 5px black;
+    background-color: yellow;
   }
+
+  70% {
+    background-color: aqua;
+  }
+
+  80% {
+    background-color: orangered;
+  }
+
+  90% {
+    background-color: darkgreen;
+  }
+
+  100% {
+    background-color: red;
+  }
+
+
+}
+
+.navbar-brand {
+  animation-name: pulse;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
 }
 
 .header-nav-position {
