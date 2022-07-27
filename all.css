@@ -1,367 +1,140 @@
-/* @keyframes pulse {
-    0% {
-        box-shadow: 0px 0px 5px 0px red;
-    }
-
-    60% {
-        box-shadow: 0px 0px 5px 5px black;
-    }
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
 }
 
-.price-btn {
-    animation-name: pulse;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+
 }
 
+a {
+    text-decoration: none !important;
 
+}
 
-.display-btn-margin {
-    display: block !important;
+.products-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+
 }
 
 .card {
     width: 14rem;
-    height: 26rem;
-    border-radius: 4px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-    transition: 0.3s transform cubic-bezier(0.075, 0.82, 0.165, 1),
-        3s -webkit-transform cubic-bezier(0.075, 0.82, 0.165, 1);
-    cursor: pointer;
-
+    max-width: 14rem;
 }
-
-.card-title {
-    text-align: center;
-    color: black;
-    font-weight: 600;
-
-}
-
-.card:hover {
-    transform: scale(1.07);
-    box-shadow: 0 10px 20px rgb(174, 178, 225), 0 4px 8px rgb(83, 76, 101);
-}
-
-
-.detail-btn {
-    color: black;
-}
-
-.add-cart-btn {
-    color: white;
-}
-
 
 .card-footer-btn {
-    position: relative;
+    display: flex;
+    gap: 0.4rem;
+    flex-direction: column;
+}
+
+.card-body {
+    background-color: #d5c6c617;
+}
+
+.image-fit {
+    object-fit: cover;
+    width: 50%;
+    float: right;
+}
+
+.text-size {
+    color: black;
+    font-weight: 600;
+}
+
+.h1-margin-top {
+    text-align: center;
+}
+
+.float-fix {
+    clear: both;
+}
+
+.details-item {
+    width: 50%;
+    float: left;
+}
+
+.btn-succes- {
     display: grid;
-    gap: 8px;
+    justify-items: center;
+    width: 25%;
 
 }
 
-
-
-
-
-@media (max-width:119px) {
-
-    .col-6 {
-        width: auto !important;
-        margin: auto !important;
-
-    }
-
-    .card-text {
-        position: relative;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-        margin-left: -3px;
-        margin-right: -6px;
-    }
-
-    .detail-btn {
-        font-size: 3px;
-    }
-
-    .add-cart-btn {
-        font-size: 3px;
-    }
-
-    .display-btn-margin {
-        position: relative;
-        display: block !important;
-        margin-top: -35px;
-        text-align: center;
-    }
-
-    .price-btn {
-        margin-top: -52px !important;
-        text-align: center;
-        display: flow-root;
-        margin-top: -52px;
-    }
-
-    .w-75 {
-        width: 100% !important;
-    }
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
-        object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-    }
-
+.price {
+    display: grid;
+    place-items: center;
+    width: 25%;
 
 }
 
-@media only screen and (min-width:120px) and (max-width:189px) {
+/* 
+============
+Media Queries
+=================== 
+*/
 
-    .col-6 {
-        width: auto !important;
-        margin: auto !important;
-
+@media screen and (max-width:500px) {
+    .h1-margin-top {
+        margin-top: -17px;
     }
 
-    .card-text {
-        position: relative;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .price-btn {
-        margin-top: -52px !important;
-        text-align: center;
-        display: flow-root;
-        margin-top: -52px;
-    }
-
-    .w-75 {
-        width: 100% !important;
-    }
-
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-
-    }
-
-    .detail-btn {
-        font-size: 6px;
-    }
-
-    .add-cart-btn {
-        font-size: 7px;
-    }
-
-    .display-btn-margin {
-        display: block !important;
-        margin-top: -64px;
-        text-align: center;
-    }
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
+    .image-fit {
         object-fit: cover;
         width: 100%;
-        max-width: 100%;
-        height: 100%;
+        float: right;
+    }
+
+    .products-container {
+        margin-top: -27px;
+    }
+
+    .btn-succes- {
+        display: grid;
+        justify-items: center;
+        margin-top: -50px !important;
     }
 
 }
 
-@media only screen and (min-width:190px) and (max-width:220px) {
+@media only screen and (min-width:501px) and (max-width:1040px) {
 
-    .col-6 {
-        width: auto !important;
-        margin: auto !important;
-
-    }
-
-    .card-text {
-        position: relative;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .price-btn {
-        margin-top: -52px !important;
-        text-align: center;
-        display: flow-root;
-        margin-top: -52px;
-    }
-
-    .w-75 {
-        width: 100% !important;
-    }
-
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-
-    }
-
-    .detail-btn {
-        font-size: 9px;
-    }
-
-    .add-cart-btn {
-        font-size: 9px;
-    }
-
-    .display-btn-margin {
-        display: block !important;
-        margin-top: -64px;
-        text-align: center;
-    }
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
+    .image-fit {
         object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
+        width: 70%;
+        float: right;
+    }
+
+    .h1-margin-top {
+        margin-top: -17px;
+    }
+
+    /* .price {
+        display: grid;
+        margin-top: 8px;
+        justify-content: center;
+    } */
+
+
+    /* .btn-succes- {
+        display: grid;
+        margin-top: -54px;
+        justify-content: center;
+    } */
+
+    .products-container {
+        margin-top: -27px;
     }
 
 
 }
-
-@media only screen and (min-width:221px) and (max-width:500px) {
-
-    .col-6 {
-        width: auto !important;
-        margin: auto !important;
-
-    }
-
-    .card-footer-btn {
-        position: relative;
-        display: grid;
-        gap: 8px;
-
-    }
-
-    .detail-btn {
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .add-cart-btn {
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-
-    .card-text {
-        position: relative;
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .display-btn-margin {
-        position: relative;
-        display: block !important;
-        margin-top: -35px;
-        text-align: center;
-    }
-
-    .price-btn {
-        margin-top: -52px !important;
-        text-align: center;
-        display: flow-root;
-        margin-top: -52px;
-    }
-
-    .w-75 {
-        width: 100% !important;
-    }
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
-        object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-    }
-
-
-}
-
-@media only screen and (min-width:501px) and (max-width:768px) {
-
-    .display-btn-margin {
-        position: absolute;
-        display: block !important;
-        margin-top: -79px;
-        margin-left: -4px;
-    }
-
-    .price-btn {
-        position: absolute;
-        margin-top: -55px !important;
-    }
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
-        object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-    }
-
-
-}
-
-@media (max-width:991px) {
-
-    .nav-sm-display {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: 32px;
-    }
-
-    .nav-drpdown-item {
-        object-fit: cover;
-        width: 100%;
-        max-width: 100%;
-        height: 100%;
-    }
-
-
-} */
